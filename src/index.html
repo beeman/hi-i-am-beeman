@@ -1,50 +1,35 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
-
-    <base href="{{DECKDECKGO_BASE_HREF}}"/>
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    img-src 'self' data: https://deckdeckgo.com https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-beta.appspot.com/ https://www.gstatic.com https://lh5.googleusercontent.com https://pbs.twimg.com https://media.giphy.com https://media.tenor.com/ https://images.unsplash.com/ https://*.githubusercontent.com/ https://*.googleusercontent.com/  https://*.ytimg.com/;
-    style-src 'self' 'unsafe-inline' https://cdn.firebase.com https://fonts.googleapis.com;
-    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
-    script-src 'self' blob: {{DECKDECKGO_EXTRA_SHAS}} https://cdn.firebase.com https://apis.google.com https://unpkg.com/prismjs@latest/;
-    connect-src 'self' https://deckdeckgo.com/ wss://api.deckdeckgo.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-beta.appspot.com/ https://www.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://raw.githubusercontent.com/PrismJS/ https://raw.githubusercontent.com/deckgo/ https://api.tenor.com/;
-    frame-src https:">
-
-    <title>{{DECKDECKGO_TITLE}}</title>
-
-    <meta property="og:site_name" content="{{DECKDECKGO_TITLE}}">
-    <meta property="og:title" content="{{DECKDECKGO_TITLE}}">
-
-    <meta name="author" content="{{DECKDECKGO_AUTHOR}}">
-
-    <meta name="description" content="{{DECKDECKGO_DESCRIPTION}}">
-
-    <meta property="og:description" content="{{DECKDECKGO_DESCRIPTION}}">
-    <meta property="og:site_name" content="{{DECKDECKGO_TITLE}}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,viewport-fit=cover">
+    <base href="/daviddalbusco/introducing-deckdeckgo/">
+    </base>
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; img-src &#39;self&#39; data: https://deckdeckgo.com https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-beta.appspot.com/ https://www.gstatic.com https://lh5.googleusercontent.com https://pbs.twimg.com https://media.giphy.com https://media.tenor.com/ https://images.unsplash.com/ https://*.githubusercontent.com/ https://*.googleusercontent.com/ https://*.ytimg.com/; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://cdn.firebase.com https://fonts.googleapis.com; font-src &#39;self&#39; https://fonts.googleapis.com https://fonts.gstatic.com; script-src &#39;self&#39; blob: 'sha256-pAocUp9xsEOqF6CGQzTunlrkISLEhGCJHzPQ1XjWGzk=' 'sha256-o4PuveB+ziQdMfO7eQTan9Nmdt4KuPy8buhfNYi4mZI=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://cdn.firebase.com https://apis.google.com https://unpkg.com/prismjs@latest/; connect-src &#39;self&#39; https://deckdeckgo.com/ wss://api.deckdeckgo.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-beta.appspot.com/ https://www.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://raw.githubusercontent.com/PrismJS/ https://raw.githubusercontent.com/deckgo/ https://api.tenor.com/; frame-src https://deckdeckgo.com https://*.deckdeckgo.com https://deckdeckgo-studio-beta.firebaseapp.com https://www.youtube.com/">
+    <title>Introducing DeckDeckGo</title>
+    <meta property="og:site_name" content="Introducing DeckDeckGo">
+    <meta property="og:title" content="Introducing DeckDeckGo">
+    <meta name="author" content="daviddalbusco">
+    <meta name="description" content="We are very happy and excited to share with you our web open source editor for presentations: DeckDeckGo">
+    <meta property="og:description" content="We are very happy and excited to share with you our web open source editor for presentations: DeckDeckGo">
+    <meta property="og:site_name" content="Introducing DeckDeckGo">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}}">
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/{{DECKDECKGO_USER_ID}}%2Fpresentations%2F{{DECKDECKGO_DECKNAME}}%2Fdeckdeckgo.png?alt=media">
+    <meta property="og:url" content="https://beta.deckdeckgo.io/daviddalbusco/introducing-deckdeckgo/">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/OlvZYbdug8dkDbwD3lN5PgM3Zx23%2Fpresentations%2Fintroducing-deckdeckgo%2Fdeckdeckgo.png?alt=media">
     <meta property="og:image:type" content="image/png">
-
     <meta name="twitter:site" content="@deckdeckgo">
-    <meta name="twitter:title" content="{{DECKDECKGO_TITLE}}">
-    <meta name="twitter:description" content="{{DECKDECKGO_DESCRIPTION}}">
-    <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/{{DECKDECKGO_USER_ID}}%2Fpresentations%2F{{DECKDECKGO_DECKNAME}}%2Fdeckdeckgo.png?alt=media">
+    <meta name="twitter:title" content="Introducing DeckDeckGo">
+    <meta name="twitter:description" content="We are very happy and excited to share with you our web open source editor for presentations: DeckDeckGo">
+    <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/OlvZYbdug8dkDbwD3lN5PgM3Zx23%2Fpresentations%2Fintroducing-deckdeckgo%2Fdeckdeckgo.png?alt=media">
     <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{DECKDECKGO_BASE_HREF}}assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{DECKDECKGO_BASE_HREF}}assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{DECKDECKGO_BASE_HREF}}assets/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" href="{{DECKDECKGO_BASE_HREF}}assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/daviddalbusco/introducing-deckdeckgo/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/daviddalbusco/introducing-deckdeckgo/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/daviddalbusco/introducing-deckdeckgo/assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/daviddalbusco/introducing-deckdeckgo/assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="{{DECKDECKGO_BASE_HREF}}assets/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="/daviddalbusco/introducing-deckdeckgo/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', async () => {
@@ -56,19 +41,14 @@
             });
         }
     </script>
-
     <script>
-        window.ROOM_NAME = '{{DECKDECKGO_TITLE}}';
+        window.ROOM_NAME = 'Introducing DeckDeckGo';
     </script>
-
     <link rel="manifest" href="manifest.json">
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="msapplication-tap-highlight" content="no">
-
-    {{DECKDECKGO_HEAD_EXTRA}}
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto">
     <style>
         :root {
             background: #ffffff;
@@ -81,12 +61,13 @@
             --ion-text-color: black;
         }
 
-        /* Until Web Components are loaded, don't display content */
+        /* Until Web Components are loaded, don&#39;t display content */
         body {
             background: #ffffff;
         }
 
-        ion-app.loading, ion-app.loading a {
+        ion-app.loading,
+        ion-app.loading a {
             color: transparent;
         }
 
@@ -98,77 +79,190 @@
             display: none;
         }
     </style>
-
 </head>
+
 <body>
+    <ion-app class="loading">
+        <ion-content force-overscroll="false" scroll-y="false">
+            <deckgo-deck style="font-family: Roboto, sans-serif;" id="slider">
+                <deckgo-slide-title style="--background:#000000; --color:#ffffff;" custom-background="true">
+                    <h1 slot="title" style="color: rgb(255, 255, 255);">Introducing DeckDeckGo
 
-<ion-app class="loading">
-    <ion-content force-overscroll="false" scroll-y="false">
 
-        <deckgo-deck id="slider">
 
-            <button slot="actions" style="color: inherit; outline: none; background: transparent; border-color: transparent; font-size: 1.6rem;"><ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/more.svg" aria-label="More options"></ion-icon></button>
+                    </h1>
+                    <section slot="content">The web open source
 
-        </deckgo-deck>
 
-        <deckgo-remote></deckgo-remote>
+                        editor for presentations
+                    </section>
+                    <div slot="background">
+                        <deckgo-lazy-img img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/OlvZYbdug8dkDbwD3lN5PgM3Zx23%2Fassets%2Fimages%2Fintroducing-deckdeckgo-bigger.jpg?alt=media&amp;token=eec1c929-ac5a-420c-b233-c2c7fe034b4c" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/OlvZYbdug8dkDbwD3lN5PgM3Zx23%2Fassets%2Fimages%2Fintroducing-deckdeckgo-bigger.jpg?alt=media&amp;token=eec1c929-ac5a-420c-b233-c2c7fe034b4c"></deckgo-lazy-img>
+                    </div>
+                </deckgo-slide-title>
+                <deckgo-slide-title>
+                    <h2 slot="title">
+                        <div><br></div>Edit your deck anywhere, display it everywhere
+                    </h2>
+                    <deckgo-lazy-img slot="content" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/daviddalbusco%2Fassets%2Fimages%2Fbanner.png?alt=media&amp;token=b96d0b29-9ad4-4d15-8945-a733e3f9856b" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/daviddalbusco%2Fassets%2Fimages%2Fbanner.png?alt=media&amp;token=b96d0b29-9ad4-4d15-8945-a733e3f9856b"></deckgo-lazy-img>
+                </deckgo-slide-title>
+                <deckgo-slide-split style="--slide-split-background-start:#3780ff;">
+                    <section slot="start" style="color: rgb(255, 255, 255);">Share your presentations as standalone <b>Progressive Web Apps</b> 📱
+                    </section>
+                    <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/daviddalbusco%2Fassets%2Fimages%2Fdeckdeckgo-pwa.png?alt=media&amp;token=2b18f047-f989-47a5-9fa2-e051b54941a1" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/daviddalbusco%2Fassets%2Fimages%2Fdeckdeckgo-pwa.png?alt=media&amp;token=2b18f047-f989-47a5-9fa2-e051b54941a1"></deckgo-lazy-img>
+                </deckgo-slide-split>
+                <deckgo-slide-youtube src="https://www.youtube.com/watch?v=3o3oGBTTRSs">
+                    <h3 slot="title">Remote control any presentations
 
-    </ion-content>
+                        <u>out of the box!
+                        </u>
+                    </h3>
+                </deckgo-slide-youtube>
+                <deckgo-slide-author img-alt="David Dal Busco" img-src="https://lh3.googleusercontent.com/a-/AAuE7mABLim8IznbrkIzscBJuHa3Or4Ly6KPpd1bXxpeJg">
+                    <h1 slot="title">Author
 
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
-        <button id="play" class="navigation ion-activatable" style="display: none;">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/play.svg" aria-label="Play video" style="font-size: 1.4em;"></ion-icon>
-        </button>
 
-        <button id="pause" class="navigation ion-activatable" style="display: none;">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/pause.svg" aria-label="Pause video" style="font-size: 1.4em;"></ion-icon>
-        </button>
 
-        <button id="previous" class="navigation ion-activatable" aria-label="Previous slide">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/arrow-back.svg" aria-label="Previous slide" style="font-size: 1.4em;"></ion-icon>
-        </button>
 
-        <button id="next" class="navigation ion-activatable" aria-label="Next slide">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/arrow-forward.svg" aria-label="Next slide" style="font-size: 1.4em;"></ion-icon>
-        </button>
 
-        <button id="slidePicker" class="navigation ion-activatable" aria-label="Jump to a particular slide">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/list.svg" aria-label="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon>
-        </button>
+                    </h1>
+                    <section slot="author">
+                        <font size="5"><b>Based on templates
 
-        <button id="fullScreen" class="navigation ion-activatable hide-on-mobile" aria-label="Full screen">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/expand.svg" aria-label="Full screen" style="font-size: 1.4em;"></ion-icon>
-        </button>
 
-        <button id="remote" class="navigation ion-activatable">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="https://deckdeckgo.com/assets/icons/ionicons/phone-portrait.svg" aria-label="Open Remote" style="font-size: 1.4em;"></ion-icon>
-        </button>
-    </ion-fab>
 
-    <!-- Ionic components anchors -->
-    <ion-popover-controller></ion-popover-controller>
-    <ion-modal-controller></ion-modal-controller>
-    <ion-alert-controller></ion-alert-controller>
 
-    <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
-        <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/twitter.svg" aria-label="Twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/linkedin.svg" aria-label="Linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/mail.svg" aria-label="Email" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/whatsapp.svg" aria-label="WhatsApp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="{{DECKDECKGO_BASE_HREF}}assets/icons/ionicons/hackernews.svg" aria-label="Hacker News" slot="hackernews" style="color: #ff6000; font-size: 1.6rem; display: block;"></ion-icon>
-    </web-social-share>
-</ion-app>
 
-<noscript>
-    Please enable Javascript to access this presentation.
-</noscript>
+                            </b></font><br><br>Used predefined slides to edit your presentations
+                        quickly⚡
 
+
+
+                        <br>
+                        <div><br></div>
+                    </section>
+                    <deckgo-social slot="social-link" aria-label="twitter/daviddalbusco" twitter="daviddalbusco">
+                        <deckgo-lazy-img svg-src="https://deckdeckgo.com/assets/icons/ionicons/twitter.svg" aria-label="Twitter"></deckgo-lazy-img>Twitter
+
+
+
+
+
+                    </deckgo-social>
+                    <deckgo-social slot="social-link" aria-label="thepracticaldev/daviddalbusco" dev="daviddalbusco">
+                        <deckgo-lazy-img svg-src="https://deckdeckgo.com/assets/icons/dev.svg" aria-label="Dev"></deckgo-lazy-img>Dev
+
+
+
+
+
+                    </deckgo-social>
+                    <deckgo-social slot="social-link" aria-label="github/peterpeterparker" github="peterpeterparker">
+                        <deckgo-lazy-img svg-src="https://deckdeckgo.com/assets/icons/ionicons/github.svg" aria-label="GitHub"></deckgo-lazy-img>GitHub
+
+
+
+
+
+                    </deckgo-social>
+                    <deckgo-social slot="social-link" full-url="https://daviddalbusco.com" aria-label="https://daviddalbusco.com">
+                        <deckgo-lazy-img svg-src="https://deckdeckgo.com/assets/icons/ionicons/globe.svg" aria-label="Web"></deckgo-lazy-img>Web
+
+
+
+
+
+                    </deckgo-social>
+                </deckgo-slide-author>
+                <deckgo-slide-gif src="https://media.tenor.com/images/b2d7246abec1271231e403bbe2a9c21d/tenor.gif">
+                    <h2 slot="header">Add any GIFS</h2>
+                    <h3 slot="footer">Tenor is integrated 😃
+                    </h3>
+                </deckgo-slide-gif>
+                <deckgo-slide-content>
+                    <h2 slot="title">Or use stock photos from Unsplash 😎</h2>
+                    <deckgo-lazy-img slot="content" img-src="https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjcyMTQyfQ" img-alt="https://unsplash.com/photos/-87JyMb9ZfU" style="display: inline-flex; justify-content: center;"></deckgo-lazy-img>
+                </deckgo-slide-content>
+                <deckgo-slide-content>
+                    <h1 slot="title">Showcase your code
+
+
+
+                    </h1>
+                    <deckgo-highlight-code slot="content" line-numbers highlight-lines="7,7" language="typescript" style="--deckgo-highlight-code-line-background:#f8f221;"><code slot="code">@Component({
+                            tag: &#39;app-root&#39;,
+                            styleUrl: &#39;app-root.scss&#39;
+                            })
+                            export class AppRoot {
+
+                            @Element() el: HTMLElement;
+
+                            }</code></deckgo-highlight-code>
+                </deckgo-slide-content>
+                <deckgo-slide-qrcode img-src="https://deckdeckgo.com/assets/img/deckdeckgo-logo.svg" content="https://beta.deckdeckgo.io/daviddalbusco/introducing-deckdeckgo/">
+                    <h1 slot="title">Deep links with QR codes
+
+                    </h1>
+                </deckgo-slide-qrcode>
+                <deckgo-slide-content>
+                    <h1 slot="title">And more to reveal...</h1>
+                    <deckgo-reveal-list slot="content" list-tag="ul">
+                        <li>​Animated elements
+
+                        </li>
+                        <li>Edit your presentation in fullscreen mode
+
+                        </li>
+                        <li>And soon dynamic charts
+                        </li>
+                        <li>or QR-Code to let your attendees get your deck instantly
+
+                        </li>
+                    </deckgo-reveal-list>
+                </deckgo-slide-content>
+                <deckgo-slide-title style="--background:#212327; --color:#ffffff;">
+                    <h1 slot="title">Get started now 🔥</h1>
+                    <section slot="content"><a title="deckdeckgo.com" href="https://deckdeckgo.com">deckdeckgo.com</a></section>
+                </deckgo-slide-title><button slot="actions" style="color: inherit; outline: none; background: transparent; border-color: transparent; font-size: 1.6rem;">
+                    <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/more.svg" aria-label="More options"></ion-icon>
+                </button>
+            </deckgo-deck>
+            <deckgo-remote></deckgo-remote>
+        </ion-content>
+        <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation"><button id="play" class="navigation ion-activatable" style="display: none;">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/play.svg" aria-label="Play video" style="font-size: 1.4em;"></ion-icon>
+            </button> <button id="pause" class="navigation ion-activatable" style="display: none;">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/pause.svg" aria-label="Pause video" style="font-size: 1.4em;"></ion-icon>
+            </button> <button id="previous" class="navigation ion-activatable" aria-label="Previous slide">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/arrow-back.svg" aria-label="Previous slide" style="font-size: 1.4em;"></ion-icon>
+            </button> <button id="next" class="navigation ion-activatable" aria-label="Next slide">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/arrow-forward.svg" aria-label="Next slide" style="font-size: 1.4em;"></ion-icon>
+            </button> <button id="slidePicker" class="navigation ion-activatable" aria-label="Jump to a particular slide">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/list.svg" aria-label="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon>
+            </button> <button id="fullScreen" class="navigation ion-activatable hide-on-mobile" aria-label="Full screen">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/expand.svg" aria-label="Full screen" style="font-size: 1.4em;"></ion-icon>
+            </button> <button id="remote" class="navigation ion-activatable">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="https://deckdeckgo.com/assets/icons/ionicons/phone-portrait.svg" aria-label="Open Remote" style="font-size: 1.4em;"></ion-icon>
+            </button></ion-fab>
+        <ion-popover-controller></ion-popover-controller>
+        <ion-modal-controller></ion-modal-controller>
+        <ion-alert-controller></ion-alert-controller>
+        <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
+            <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/twitter.svg" aria-label="Twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/linkedin.svg" aria-label="Linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/mail.svg" aria-label="Email" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/whatsapp.svg" aria-label="WhatsApp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/daviddalbusco/introducing-deckdeckgo/assets/icons/ionicons/hackernews.svg" aria-label="Hacker News" slot="hackernews" style="color: #ff6000; font-size: 1.6rem; display: block;"></ion-icon>
+        </web-social-share>
+    </ion-app><noscript>Please enable Javascript to access this presentation.</noscript>
+    <script src="main.ca48744b7be727fa3cc1.js?819753c507d653841d09"></script>
 </body>
+
 </html>

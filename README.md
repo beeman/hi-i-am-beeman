@@ -1,6 +1,6 @@
-# {{DECKDECKGO_TITLE}}
+# Hi I am beeman
 
-{{DECKDECKGO_DESCRIPTION}} 
+This is my side  
 
 ## Table of contents
 
@@ -11,7 +11,7 @@
 
 ## Slides
 
-🔗 [https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}}](https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}})
+🔗 [https://beta.deckdeckgo.io/daviddalbusco/introducing-deckdeckgo/](https://beta.deckdeckgo.io/daviddalbusco/introducing-deckdeckgo/)
 
 ## Credits
 
@@ -22,8 +22,8 @@
 ⚙️ To build this presentation, proceed as following:
 
 ```
-git clone {{DECKDECKGO_GITHUB_REPO_URL}}
-cd {{DECKDECKGO_GITHUB_REPO_NAME}}
+git clone https://github.com/beeman/hi-i-am-beeman
+cd hi-i-am-beeman
 npm install
 npm run start
 ```
